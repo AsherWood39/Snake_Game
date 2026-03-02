@@ -23,7 +23,6 @@ A modern take on the classic Snake game, powered by Computer Vision (Hand Tracki
 Unlike standard games that use high-level graphics libraries, this project implements core CG algorithms to render every pixel manually:
 
 - **Bresenham's Line Algorithm**: Used to draw the grid lines and the game area boundary with pixel-perfect accuracy.
-- **Midpoint Circle Algorithm**: Implemented to render the food as a smooth, geometrically calculated circle.
 - **Scanline Fill Algorithm**: Used to color the snake's body segments by calculating horizontal spans for each block.
 - **Cohen-Sutherland Clipping**: Grid lines are calculated for the full screen and then "clipped" to only display within the game arena using bit-coded region classification.
 - **Pixel-By-Pixel Rendering**: Bypasses traditional high-level functions like `cv2.rectangle` for game elements to provide direct control over the image buffer.
@@ -53,7 +52,6 @@ Unlike standard games that use high-level graphics libraries, this project imple
 
 - `main.py`: Core game loop and CV integration.
 - `bresenham.py`: Implementation of Bresenham's Line Algorithm.
-- `circle.py`: Implementation of Midpoint Circle Algorithm.
 - `fill.py`: Implementation of Scanline Fill Algorithm.
 - `clipping.py`: Implementation of Cohen-Sutherland Clipping.
 
